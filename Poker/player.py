@@ -1,3 +1,6 @@
+from Poker.game_logic import hand_rank
+
+
 class Player:
     def __init__(self, name, stack=100):
         self.name = name
@@ -19,3 +22,21 @@ class Player:
 
     def show_hand(self):
         return ' '.join(map(str, self.hand))
+
+    def bet(self, amount):
+        if amount > self.stack:
+            raise ValueError(f"{self.name} does not have enough chips to bet {amount}")
+        self.stack -= amount
+        return amount
+
+    def exchange_cards(self, indices, deck):
+        for i in sorted(indices, reverse=True):
+            self.hand.pop(i)
+        new_cards = deck.deal(len(indices))
+        self.hand.extend(new_cards)
+
+    def hand_rank(self):
+        return hand_rank(self.hand)
+
+    def __str__(self):
+        return f"{self.name}: {self.show_hand()} | Chips: {self.stack}"
