@@ -1,0 +1,17 @@
+{
+  "game_id": "1748971301",
+  "players": [
+    {
+      "name": "Gracz",
+      "stack": 450,
+      "is_bot": false
+    },
+    {
+      "name": "Bot 1",
+      "stack": 500,
+      "is_bot": true
+    }
+  ],
+  "pot": 50,
+  "stage": "showdown"
+}
