@@ -1,0 +1,22 @@
+{
+  "game_id": "1748968781.940403",
+  "players": [
+    {
+      "name": "Marvin 1",
+      "stack": 537,
+      "is_bot": true
+    },
+    {
+      "name": "Marvin 2",
+      "stack": 450,
+      "is_bot": true
+    },
+    {
+      "name": "uwu",
+      "stack": 10000,
+      "is_bot": false
+    }
+  ],
+  "pot": 0,
+  "stage": "showdown"
+}

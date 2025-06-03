@@ -24,7 +24,7 @@ class Player:
         return old_card
 
     def get_stack_amount(self):
-        return self.stac
+        return self.stack
 
     def cards_to_str(self):
         # Zwraca rękę jako jeden string np. "A♠ 10♦ 2♣ 7♥ J♣"
